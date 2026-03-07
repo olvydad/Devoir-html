@@ -5,41 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Projet final HTML</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body  class="pt-5">
+
+
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top p-50">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             
+        
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                     <li class="nav-item">
+                    <a  class="nav-link" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a  class="nav-link" aria-current="page" href="chambre.html">Chambre</a>
+                    </li>
+                    <li> <a href="reservation.html"  class="nav-link">Réservation</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Galerie.html">Galerie</a>
+                    </li>
+                    <li>
+                        <a href="restaurant.html" class="nav-link">Restaurant</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Service
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#sec_spa">Spa</a></li>
+                            <li><a class="dropdown-item" href="#sec_picine">Piscine</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#sec_restor">Restaurant</a></li>
                         </ul>
                     </li>
+
+
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
@@ -49,76 +55,246 @@
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
+
+
         </div>
     </nav>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Annotation 2025-11-28 064430.png" class="d-block w-10" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="Annotation 2025-11-28 064502.png" class="d-block w-10" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="1759025695307 (3).jpg" class="d-block w-10" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            <script src="js/bootstrap.bundle.min.js"></script>
-        </button>
+    <main>
+
+       <section class="py-5 bg-light" id="presentation" style="padding-top: 100px;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Colonne gauche : image -->
+      <div class="col-md-6 mb-4 mb-md-0 ">
+        <figure class="text-center">
+          <img src="image/Logo complexe Olymax.png" style="max-height: 250px;" class="img-fluid rounded shadow mb-3" alt="Logo de l'hôtel Olymax">
+          <figcaption>
+            <h2 class="fw-bold mb-3">Bienvenue à l'Hôtel Olymax</h2>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <!-- Colonne droite : texte -->
+      <div class="col-md-6">
+        <p class="lead">
+          Symbole d’élégance moderne et de raffinement intemporel, l’Hôtel Olymax incarne
+          l’alliance parfaite entre confort contemporain et héritage architectural.
+        </p>
+        <p>
+          Inauguré au cœur de la ville des Cayes, Olymax offre une atmosphère unique où design sophistiqué
+          et hospitalité chaleureuse se rencontrent. Avec ses suites luxueuses, son spa exclusif
+          et son restaurant gastronomique, il propose une expérience cinq étoiles qui séduit
+          voyageurs d’affaires comme amateurs de séjours inoubliables.
+        </p>
+        <p class="fw-semibold">
+          Un héritage moderne au service de votre bien-être.
+        </p>
+        <a href="service.html" class="btn btn-primary btn-lg">Découvrir nos services</a>
+      </div>
+      
     </div>
+  </div>
+</section>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/Marathon-de-Paris.jpg" class="d-block w-100 vh-100 object-fit-cover"
+                        alt="grande vue">
+                    <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                        <h1 class="display-3 fw-bold">Bienvenue à l'Hôtel Riviera</h1>
+                        <p class="lead">Un séjour de luxe et de confort</p>
+                        <a href="reservation.html" class="btn btn-primary btn-lg">Réservez maintenant</a>
+                    </div>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/bloc-02.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="grande vue">
+                        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                            <h1 class="display-3 fw-bold">Relaxez-vous dans notre spa</h1>
+                            <p class="lead">Un séjour de luxe et de confort</p>
+                            <a href="spa.html" class="btn btn-primary btn-lg">Tous les services disponibles</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="image/HERO-PICTURE.jpg" class="d-block w-100 vh-100 object-fit-cover"
+                            alt="Vue immersive">
+                        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                            <h1 class="display-3 fw-bold">Découvrez nos suites premium</h1>
+                            <p class="lead">Confort et élégance au rendez-vous</p>
+                            <a href="chambres.html" class="btn btn-light btn-lg">Voir les chambres</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/jardinhiver_bloctea.jpg" class="d-block w-100 vh-100 object-fit-cover"
+                            alt="Jardin d'hiver">
+                        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                            <h1 class="display-3 fw-bold">Relaxez-vous avec de bon plat</h1>
+                            <p class="lead">Un espace bien-être unique</p>
+                            <a href="restaurant.html" class="btn btn-success btn-lg">Découvrir nos services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
 
 
 
-    <div class="container">
-        <div class="row gx-2">
-            <div class="col-md-4 gx-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="1759025695307 (3).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+            <div class="container my-5">
+                <h2 class="text-center fw-bold mb-4">Nos offres</h2>
+                <div class="row gx-4">
+                    <!-- Chambre  -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow h-100">
+                            <img src="image/2B.jpg" class="card-img-top" alt="Suite Deluxe">
+                            <div class="card-body">
+                                <h5 class="card-title">Suite Deluxe</h5>
+                                <p class="card-text">
+                                    Profitez d’un confort exceptionnel avec vue sur la mer, lit king-size et salle de
+                                    bain moderne.
+                                </p>
+                                <a href="chambre.html" class="btn btn-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spa -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow h-100">
+                            <img src="image/bloc-01.jpg" class="card-img-top" alt="Chambre Standard">
+                            <div class="card-body">
+                                <h5 class="card-title">Spa</h5>
+                                <p class="card-text">
+                                    Idéale pour un séjour pratique et confortable, équipée de Wi-Fi gratuit et
+                                    climatisation.
+                                </p>
+                                <a href="spa.html" class="btn btn-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow h-100">
+                            <img src="image/Blue-Sunday.jpg" class="card-img-top" alt="Suite Premium">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurant</h5>
+                                <p class="card-text">
+                                    Une expérience haut de gamme avec les plats les plus savoureux, minibar .
+                                </p>
+                                <a href="restaurant.html" class="btn btn-primary">Voir plus</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 gx-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="1759025695307 (3).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 gx-2">
-                <div class="card" style="width: 18rem;">
-                    <img src="1759025695307 (3).jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+            <section class="py-5 bg-light" id="temoignages">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Ce que disent nos clients</h2>
+    <div class="row">
+      
+      <!-- Témoignage 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <p class="card-text">“Un séjour exceptionnel à l’Hôtel Olymax. Le service est impeccable et les chambres sont magnifiques.”</p>
+            <h6 class="card-subtitle mt-3 text-muted">Marie L., Les Cayes</h6>
+          </div>
         </div>
+      </div>
+      
+      <!-- Témoignage 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <p class="card-text">“Le spa est incroyable, et le restaurant propose une cuisine raffinée. Je recommande vivement.”</p>
+            <h6 class="card-subtitle mt-3 text-muted">Jean C., Cap_Haitien</h6>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Témoignage 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <p class="card-text">“Un hôtel où l’on se sent chez soi, avec une touche de luxe inégalée.”</p>
+            <h6 class="card-subtitle mt-3 text-muted">Sophie L., Port-Salut</h6>
+          </div>
+        </div>
+      </div>
+      
     </div>
+  </div>
+</section>
 
-
+    </main>
 </body>
+<footer>
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Colonne 1 : Branding -->
+      <div class="col-md-4 mb-4">
+        <h4 class="fw-bold">Olymax Hôtel</h4>
+        <p>
+          Élégance moderne et raffinement intemporel au cœur des Cayes.
+          Votre destination cinq étoiles pour un séjour inoubliable.
+        </p>
+      </div>
+      
+      <!-- Colonne 2 : Liens rapides -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Liens rapides</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Accueil</a></li>
+          <li><a href="chambres.html" class="text-light text-decoration-none">Chambres</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="galerie.html" class="text-light text-decoration-none">Galerie</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Colonne 3 : Contact -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Contact</h5>
+        <p><i class="bi bi-geo-alt"></i> Les Cayes, Haïti</p>
+        <p><i class="bi bi-telephone"></i> +509 55102898</p>
+        <p><i class="bi bi-envelope"></i> contact@olymaxhotel.com</p>
+        
+        <!-- Réseaux sociaux -->
+        <div class="mt-3">
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Ligne du bas -->
+    <div class="text-center mt-4 border-top pt-3">
+      <p class="mb-0">&copy; 2026 Olymax Hôtel. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </html>
