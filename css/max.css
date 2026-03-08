@@ -1,0 +1,26 @@
+/* Active le mode vertical */
+.carousel-vertical .carousel-inner {
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* hauteur du carousel */
+  overflow: hidden;
+}
+
+.carousel-vertical .carousel-item {
+  transition: transform 0.4s ease-in-out;
+  flex: 0 0 100%;
+}
+
+/* Animation verticale */
+.carousel-vertical .carousel-item-next.carousel-item-start,
+.carousel-vertical .carousel-item-prev.carousel-item-end {
+  transform: translateY(0);
+}
+
+.carousel-vertical .active.carousel-item-start {
+  transform: translateY(-100%);
+}
+
+.carousel-vertical .active.carousel-item-end {
+  transform: translateY(100%);
+}

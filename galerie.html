@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/max.css">
     <title>Galerie</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-primary fixed-top" >
         <div class="container-fluid">
-            <a class="navbar-brand" href="chambre.html">Chambre</a>
+            <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="galerie.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Galerie
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#sec_spa">Spa</a></li>
+                            <li><a class="dropdown-item" href="#sec_picine">Piscine</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#sec_restor">Restaurant</a></li>
+                        </ul>
+                    </li>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -22,22 +36,9 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Galerie.html">Galerie</a>
+                        <a class="nav-link" href="service.html">Service</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Service
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#sec_spa">Spa</a></li>
-                            <li><a class="dropdown-item" href="#sec_picine">Piscine</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#sec_restor">Restaurant</a></li>
-                        </ul>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
@@ -50,9 +51,55 @@
         </div>
     </nav>
     <main>
+<section class="py-5 bg-light" id="galerie">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Galerie</h2>
+    <div class="row g-4">
 
+      <!-- Image 1 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="image/bloc-02.jpg" class="img-fluid rounded shadow-sm" alt="Spa Olymax">
+      </div>
 
+      <!-- Image 2 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="image/OIP (1).jpg" class="img-fluid rounded shadow-sm" alt="Piscine Olymax">
+      </div>
 
+      <!-- Image 3 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="image/OIP2.webp" class="img-fluid rounded shadow-sm" alt="Salle de sport Olymax">
+      </div>
+
+      <!-- Image 4 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="images/wifi.jpg" class="img-fluid rounded shadow-sm" alt="Wi-Fi Olymax">
+      </div>
+
+      <!-- Image 5 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="image/plat complet.webp" class="img-fluid rounded shadow-sm" alt="Restaurant Olymax">
+      </div>
+
+      <!-- Image 6 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="image/3A.jpg" class="img-fluid rounded shadow-sm" alt="Chambre Deluxe Olymax">
+      </div>
+
+      <!-- Image 7 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="image/8C.jpg" class="img-fluid rounded shadow-sm" alt="Suite Prestige Olymax">
+      </div>
+
+      <!-- Image 8 -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <img src="image/1C.jpg" class="img-fluid rounded shadow-sm" alt="Chambre Standard Olymax">
+      </div>
+
+    </div>
+  </div>
+</section>
     </main>
 </body>
+<script src="js/bootstrap.bundle.min.js"></script>
 </html>
