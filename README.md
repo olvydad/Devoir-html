@@ -45,7 +45,7 @@ Comment utiliser le projet
 importer le dépôt :
 Copier le lien du depot , utiliser git bash pour remote le lien 
 git remote add origin https://github.com/olvydad/Devoir-html/
-Ouvrir le fichier index.html dans un navigateur.
+Ouvrir le fichier index.html dans un navigateur ou cliquer sur ce lien https://olvydad.github.io/Devoir-html/.
 Naviguer dans les différentes pages du site.
 
 **Auteur**
