@@ -11,6 +11,8 @@
   flex: 0 0 100%;
 }
 
+
+
 .navbar .nav-link.active {
   font-weight: bold;       /* texte en gras */
   color: #ffc107 !important; /* couleur jaune (Bootstrap warning) */
@@ -20,7 +22,7 @@
 /* Animation verticale */
 .carousel-vertical .carousel-item-next.carousel-item-start,
 .carousel-vertical .carousel-item-prev.carousel-item-end {
-  transform: translateY(0);
+  transform: translateY(1.5);
 }
 
 .carousel-vertical .active.carousel-item-start {
@@ -121,8 +123,8 @@ padding: 0%;
   justify-content: center;     /* centre horizontalement */
   align-items: center;         /* centre verticalement */
   text-align: center;          /* centre le texte */
-  overflow-x: hidden;  
-  margin-bottom: 10px;        /* empêche le scroll horizontal */
+  overflow-x: hidden;          /* empêche le scroll horizontal */
+  margin-bottom: 10px;        
   margin-top: 10px;
   padding: 1px;
   border-radius: 5px;
